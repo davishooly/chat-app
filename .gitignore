@@ -12,6 +12,8 @@
 
 yarn.lock
 
+yarn-error.log
+
 # production
 /build
 
