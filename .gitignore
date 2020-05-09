@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+.idea
+
+yarn.lock
+
 # production
 /build
 
