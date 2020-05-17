@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 /**
- * code splitting
+ * code splitting -> faster page load time
  *  Add dynamic import on route level components to improve performance
  */
 const ChatPage = lazy(() => import("./pages/MainPage/MainPage"));

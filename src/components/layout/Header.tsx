@@ -16,15 +16,15 @@ const Header = () => {
     const { theme } = useContext(context);
 
     return (
-        <HeaderComponent themes={theme}>
-            <div className="logo--section">
+        <HeaderComponent {...theme}>
+            <div className="logo__section">
                 <img src="" alt="logo"/>
                 <p> Chat </p>
             </div>
-            <div className="nav--section">
+            <div className="nav__section">
                 {
                     Object.values(navItems).map(item => (
-                        <span> {item}</span>
+                        <span key={item}> {item}</span>
                     ))
                 }
             </div>
