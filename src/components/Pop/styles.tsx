@@ -31,4 +31,18 @@ export const PopContainer =  Styled.div<any>`
     border-left-color: #fff;
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
   }
+  
+  .pop__content--container {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       height: 90%;
+       padding: 8px;
+       
+       .workspace {
+          display: grid;
+          grid-template-columns: .3fr 2fr;
+          grid-template-rows: auto;
+       }
+  }
 `;

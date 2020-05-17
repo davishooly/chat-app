@@ -12,6 +12,36 @@ const navItems = {
     workSpaces: "Your workspaces"
 };
 
+interface popDetails {
+    image?: string;
+    name: string;
+}
+
+const popData = [
+    {image: '', name: 'iCube'},
+    {image: '', name: 'developerISH'},
+    {image: '', name: 'Sign into another workspace'},
+    {image: '', name: 'Create a new workspace'},
+];
+
+
+const popContent = (workspaces: Array<popDetails>) => {
+    return (
+        <div className="pop__content--container">
+            {
+                workspaces.length
+                &&
+                workspaces.map(({image, name}) => (
+                    <div className="workspace">
+                        <img src={image} alt="icon"/>
+                        <span> {name}</span>
+                    </div>
+                ))
+            }
+        </div>
+    );
+};
+
 const Header = () => {
 
     const {theme} = useContext(context);
@@ -19,7 +49,7 @@ const Header = () => {
     const [isOpen, setOpenPop] = useState(false);
 
     const handleNavigation = (value: string) => {
-        if(value === "Your workspaces")  setOpenPop(!isOpen);
+        if (value === "Your workspaces") setOpenPop(!isOpen);
     };
 
     return (
@@ -39,8 +69,8 @@ const Header = () => {
                     ))
                 }
             </div>
-            <PopContainer {...{ isOpen, setOpenPop}}>
-                kimME
+            <PopContainer {...{isOpen, setOpenPop}}>
+                {popContent(popData)}
             </PopContainer>
         </HeaderComponent>
     );
