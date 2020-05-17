@@ -10,12 +10,13 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts src/test",
     "eject": "react-scripts eject",
     "stylelint:fix": "stylelint 'src/**/*.{scss,sass}' --fix",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
@@ -40,6 +41,7 @@
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "eslint": "^6.6.0",
     "eslint-loader": "^4.0.2",
