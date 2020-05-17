@@ -1,20 +1,24 @@
 import React, { useState }  from "react";
 
 import ThemeContext from "./context";
-import { darkTheme } from "./themes";
+import { darkTheme, lightTheme } from "./themes";
 
 /**
  *  Handles theme change of the application
  */
 
 const ThemeProvider  = (props : any) => {
+
     const [ theme, changeTheme] = useState(darkTheme);
+    const handleThemeChange = () => {
+        changeTheme( theme.type === "dark"? lightTheme : darkTheme)
+    };
 
     return (
         <ThemeContext.Provider value = {{
-                theme,
-                changeTheme
-            }}>
+            theme,
+            handleThemeChange
+        }}>
             { props.children }
         </ThemeContext.Provider>
     )

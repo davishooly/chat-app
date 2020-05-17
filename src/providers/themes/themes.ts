@@ -1,4 +1,5 @@
 const darkTheme = {
+    type: "dark",
     primaryLightColor: "#e9e9eb",
     secondaryLightColor: "#777",
     primaryDarkColor: "#1e5266",
@@ -7,6 +8,7 @@ const darkTheme = {
 };
 
 const lightTheme = {
+    type: "light",
     primaryLightColor: "#e9e9eb",
     secondaryLightColor: "#ed7a7a",
     primaryDarkColor: "#da0000",

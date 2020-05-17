@@ -5,11 +5,10 @@ import ThemeContext from '../../providers/themes/context'
 
 const MainPage = (props: any) => {
 
-    // @ts-ignore
-    const { theme } = useContext(ThemeContext);
+    const { theme, handleThemeChange } = useContext(ThemeContext);
+
     return (
-        <MainPageComponent themes = {theme} >
-            kimame
+        <MainPageComponent themes = { theme } >
         </MainPageComponent>
     )
 };
