@@ -1,8 +1,10 @@
-import React, { useContext, lazy, Suspense } from "react";
+import React, { useContext } from "react";
 import { MainPageComponent } from "./styles";
 import ThemeContext from '../../providers/themes/context';
-const  HeaderLayout = lazy(() =>  import( "../../components/layout/Header"));
 
+/**
+ *  Displays the main chat section
+ */
 
 const MainPage = (props: any) => {
 
@@ -10,11 +12,7 @@ const MainPage = (props: any) => {
 
     return (
         <>
-            <Suspense fallback={<div>Loading...</div>}>
-            <HeaderLayout/>
-            </Suspense>
-            <MainPageComponent themes={theme}>
-            </MainPageComponent>
+            <MainPageComponent themes={theme}/>
         </>
     );
 };
