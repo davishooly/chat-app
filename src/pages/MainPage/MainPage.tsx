@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, lazy, Suspense } from "react";
 import { MainPageComponent } from "./styles";
 import ThemeContext from '../../providers/themes/context';
-import HeaderLayout from "../../components/layout/Header";
+const  HeaderLayout = lazy(() =>  import( "../../components/layout/Header"));
 
 
 const MainPage = (props: any) => {
@@ -10,7 +10,9 @@ const MainPage = (props: any) => {
 
     return (
         <>
+            <Suspense fallback={<div>Loading...</div>}>
             <HeaderLayout/>
+            </Suspense>
             <MainPageComponent themes={theme}>
             </MainPageComponent>
         </>
