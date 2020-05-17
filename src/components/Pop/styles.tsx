@@ -41,8 +41,14 @@ export const PopContainer =  Styled.div<any>`
        
        .workspace {
           display: grid;
+          padding: 6px;
+          border-radius: 6px;
           grid-template-columns: .3fr 2fr;
           grid-template-rows: auto;
+       }
+       .workspace:hover{
+          cursor: pointer;
+          background: ${props => props.textBackground};
        }
   }
 `;
