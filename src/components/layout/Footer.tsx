@@ -24,10 +24,12 @@ const Footer = () => {
                     ))
                 }
             </div>
-            <div className="footer__note">
-                <img src='' alt="logo"/>
-                <div className="contact">
-                    <span>Contact us </span>
+            <div className="foot__note">
+                <div className="footer__note--container">
+                    <img src='' alt="logo"/>
+                    <div className="contact">
+                        <span>Contact us </span>
+                    </div>
                 </div>
             </div>
         </FooterComponent>

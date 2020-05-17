@@ -11,7 +11,6 @@ const HeaderComponent = styled.div<ThemesType>`
   border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
-  left: 0;
   z-index:99;
   
   .logo__section {
@@ -56,10 +55,18 @@ const FooterComponent = styled.div<ThemesType>`
     justify-content: space-between;
     margin: 0 auto;
   }
-  .footer__note {
+  
+  .foot__note { 
+     background: ${props => props.skyBackground};
+     margin: auto  auto 0 auto;
+     width: 100%
+  }
+  .footer__note--container {
     width: 50%;
-    margin: auto  auto 0 auto;
+    height: 50px;
     display: flex;
+    margin: 0 auto;
+    align-items: center;
     justify-content: space-between;
   }
 `;

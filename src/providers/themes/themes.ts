@@ -3,6 +3,7 @@ const basicThemes = {
     text: "#616061",
     textBackground: "rgba(0,0,0,.1)",
     primaryLightColor: "#e9e9eb",
+    skyBackground: "rgba(0,0,0,.05)",
 };
 
 

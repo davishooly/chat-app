@@ -6,4 +6,5 @@ export type ThemesType = {
     primaryDarkColor: string,
     secondaryDarkColor: string,
     messageBackgroundColor: string,
+    skyBackground: string,
 }
